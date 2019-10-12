@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/bg"
-    android:scaleType="fitXY"
-    android:src="@drawable/home"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/home"/>
     <ImageView
         android:id="@+id/btn_dangnhap"
         android:layout_width="wrap_content"
@@ -20,6 +20,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/choithu"
+        android:onClick="Dangnhap"
         android:id="@+id/btn_dangky"/>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
