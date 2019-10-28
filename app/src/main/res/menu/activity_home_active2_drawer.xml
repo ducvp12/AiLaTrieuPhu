@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+
     tools:showIn="navigation_view">
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/app__ic_sm_home"
+
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/app__ic_sm_challenge"
             android:title="@string/menu_chondoithu" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/app__ic_sm_notify"
             android:title="@string/menu_tinthachdau" />
         <item
             android:id="@+id/nav_tools"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/app__ic_sm_leader"
             android:title="@string/menu_bangxephang" />
         <item
             android:id="@+id/nav_share"
-            android:icon="@drawable/ic_menu_share"
+            android:icon="@drawable/app__ic_sm_settings"
             android:title="@string/menu_tuychinh" />
         <item
             android:id="@+id/nav_send"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@drawable/app__ic_logout2"
             android:title="@string/menu_dangxuat" />
 
     </group>
