@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
-
+    DangNhapActivity dangNhapActivity;
     private ImageView bg;
     private ImageView btnDangnhap;
     private ImageView btnDangky;
@@ -42,7 +42,13 @@ public class HomeActivity extends AppCompatActivity {
         dialog = new Dialog(HomeActivity.this);
         dialog.setTitle("Đăng nhập");
         dialog.setContentView(R.layout.dialog_login);
-       
+        ImageView imglogin=dialog.findViewById(R.id.logingg);
+        imglogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         dialog.show();
     }
     public void showAlertDialog(){
@@ -66,5 +72,6 @@ public class HomeActivity extends AppCompatActivity {
         bg = (ImageView) findViewById(R.id.bg);
         btnDangnhap = (ImageView) findViewById(R.id.btn_choingay);
         btnDangky = (ImageView) findViewById(R.id.btn_dangky);
+
     }
 }
