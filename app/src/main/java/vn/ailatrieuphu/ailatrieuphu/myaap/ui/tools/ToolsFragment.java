@@ -29,57 +29,26 @@ public class ToolsFragment extends Fragment {
 
     private AppBarConfiguration mAppBarConfiguration;
     private androidx.appcompat.widget.Toolbar toolbar;
-    private TableLayout tabs;
-    private ViewPager viewpager;
     private ToolsViewModel toolsViewModel;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
+        toolsViewModel = ViewModelProviders.of(this).get(ToolsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_tools, container, false);
-       // final TextView textView = root.findViewById(R.id.text_tools);
+        ToolAdapter adapter = new ToolAdapter(getFragmentManager());
         mTabLayout = root.findViewById(R.id.tabs);
         mViewPager = root.findViewById(R.id.viewpager);
-
-        setupViewPager();
+        mViewPager.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPager);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-               // textView.setText(s);
-            }
-        });
+        setIcon();
         return root;
 
     }
 
-
-    private void setupViewPager() {
-        ToolAdapter adapter = new ToolAdapter(this.getFragmentManager());
-        mViewPager.setAdapter(adapter);
-        mViewPager.setCurrentItem(0);
-        mViewPager.setPageTransformer(true, new DepthPageTransformer());
-        mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+    private void setIcon(){
+        mTabLayout.getTabAt(0).setIcon(R.drawable.app__ic_week);
+        mTabLayout.getTabAt(1).setIcon(R.drawable.app__ic_month);
+        mTabLayout.getTabAt(2).setIcon(R.drawable.app__ic_year);
     }
 
-
-//    public void back_XH(View view) {
-//        finish();
-//    }
 }

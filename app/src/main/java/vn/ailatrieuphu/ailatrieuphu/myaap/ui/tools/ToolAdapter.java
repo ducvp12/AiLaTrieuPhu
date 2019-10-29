@@ -1,5 +1,6 @@
 package vn.ailatrieuphu.ailatrieuphu.myaap.ui.tools;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -8,9 +9,10 @@ import androidx.fragment.app.FragmentPagerAdapter;
 public class ToolAdapter extends FragmentPagerAdapter {
     public static final int NUM_PAGER = 3;
 
-    public ToolAdapter(FragmentManager fm) {
+    public ToolAdapter(@NonNull FragmentManager fm) {
         super(fm);
     }
+
 
     @Override
     public Fragment getItem(int position) {

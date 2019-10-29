@@ -61,11 +61,11 @@ public class HomeActiveActivity extends AppCompatActivity implements NavigationV
         int id = item.getItemId();
         switch (id){
             case R.id.nav_tools:
-                Intent intent=new Intent(this,BangXepHangActivity.class);
-                startActivity(intent);
+                //Intent intent=new Intent(this,BangXepHangActivity.class);
+                //startActivity(intent);
         }
         if (id == R.id.nav_tools) {
-            startActivity(new Intent(getApplicationContext(), BangXepHangActivity.class));
+            //startActivity(new Intent(getApplicationContext(), BangXepHangActivity.class));
 
         }
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
