@@ -23,6 +23,7 @@
         android:label="@string/menu_tinthachdau"
         tools:layout="@layout/fragment_slideshow" />
 
+
     <fragment
         android:id="@+id/nav_tools"
         android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.tools.ToolsFragment"
@@ -35,9 +36,5 @@
         android:label="@string/menu_tuychinh"
         tools:layout="@layout/fragment_share" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.send.SendFragment"
-        android:label="@string/menu_dangxuat"
-        tools:layout="@layout/fragment_send" />
+
 </navigation>

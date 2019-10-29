@@ -1,6 +1,7 @@
 package vn.ailatrieuphu.ailatrieuphu.myaap;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -65,7 +66,9 @@ public class DangNhapActivity extends AppCompatActivity implements  GoogleApiCli
         setContentView(R.layout.activity_dang_nhap);
         initView();
         AccessToken accessToken = AccessToken.getCurrentAccessToken();
-
+//        MediaPlayer nhacnen=new MediaPlayer();
+//        nhacnen = nhacnen.create(this, R.raw.opening );
+//        nhacnen.setLooping(true);
 //        boolean isLoggedIn = accessToken != null && !accessToken.isExpired();
 
         LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
@@ -73,7 +76,7 @@ public class DangNhapActivity extends AppCompatActivity implements  GoogleApiCli
 
 //       CallbackManager callbackManager = CallbackManager.Factory.create();
 
-        LoginFB();
+     //   LoginFB();
 //        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
 //            @Override
 //            public void onSuccess(LoginResult loginResult) {
@@ -199,7 +202,7 @@ public class DangNhapActivity extends AppCompatActivity implements  GoogleApiCli
             GoogleSignInAccount acc=googleSignInResult.getSignInAccount();
             tvNamefb.setText(acc.getDisplayName().toString());
             tvEmailfb.setText(acc.getEmail().toString());
-
+            Log.e("Tvnam",acc.getDisplayName().toString());
             if (acc.getPhotoUrl().toString()!= null){
                 Picasso.with(this).load(acc.getPhotoUrl().toString()).into(img);  }
             else{
