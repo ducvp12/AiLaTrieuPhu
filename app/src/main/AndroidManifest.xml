@@ -11,7 +11,6 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BangXepHangActivity"></activity>
         <activity
             android:name=".HomeActiveActivity"
             android:label="@string/title_activity_home_active"
