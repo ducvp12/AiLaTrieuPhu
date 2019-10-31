@@ -1,6 +1,7 @@
 package vn.ailatrieuphu.ailatrieuphu.myaap;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -58,18 +59,18 @@ public class HomeActiveActivity extends AppCompatActivity implements NavigationV
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case R.id.nav_tools:
-                Intent intent=new Intent(this,BangXepHangActivity.class);
-                startActivity(intent);
-        }
-        if (id == R.id.nav_tools) {
-            startActivity(new Intent(getApplicationContext(), BangXepHangActivity.class));
-
-        }
-        DrawerLayout drawer = findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
+//        int id = item.getItemId();
+//        switch (id){
+//            case R.id.nav_tools:
+//                Intent intent=new Intent(this,BangXepHangActivity.class);
+//                startActivity(intent);
+//        }
+//        if (id == R.id.nav_tools) {
+//            startActivity(new Intent(getApplicationContext(), BangXepHangActivity.class));
+//
+//        }
+//        DrawerLayout drawer = findViewById(R.id.drawer_layout);
+//        drawer.closeDrawer(GravityCompat.START);
         return true;
     }
 }

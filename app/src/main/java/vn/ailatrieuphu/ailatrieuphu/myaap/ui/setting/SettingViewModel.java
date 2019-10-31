@@ -1,16 +1,16 @@
-package vn.ailatrieuphu.ailatrieuphu.myaap.ui.gallery;
+package vn.ailatrieuphu.ailatrieuphu.myaap.ui.setting;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class SettingViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public SettingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is share fragment");
     }
 
     public LiveData<String> getText() {

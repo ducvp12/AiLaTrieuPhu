@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.gallery.GalleryFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.chondoithu.GalleryFragment"
         android:label="@string/menu_chondoithu"
         tools:layout="@layout/fragment_gallery" />
 
@@ -32,7 +32,7 @@
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.share.ShareFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.setting.SettingFragment"
         android:label="@string/menu_tuychinh"
         tools:layout="@layout/fragment_share" />
 

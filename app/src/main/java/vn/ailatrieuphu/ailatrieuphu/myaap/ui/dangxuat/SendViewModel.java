@@ -1,4 +1,4 @@
-package vn.ailatrieuphu.ailatrieuphu.myaap.ui.send;
+package vn.ailatrieuphu.ailatrieuphu.myaap.ui.dangxuat;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
