@@ -62,7 +62,8 @@
       app:layout_constraintStart_toStartOf="parent"
       tools:ignore="MissingConstraints">
 
-    <ImageView
+    <com.makeramen.roundedimageview.RoundedImageView
+        app:riv_oval="true"
         android:id="@+id/imguser"
         android:layout_width="50dp"
         android:layout_height="50dp"

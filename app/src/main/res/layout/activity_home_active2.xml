@@ -21,7 +21,7 @@
         android:fitsSystemWindows="true"
         app:itemTextColor="#fff"
         app:itemIconTint="#FFF"
-        android:background="#717391"
+        android:background="#000000"
         app:headerLayout="@layout/nav_header_home_active"
         app:menu="@menu/activity_home_active2_drawer" />
 

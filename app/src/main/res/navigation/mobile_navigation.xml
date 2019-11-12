@@ -7,32 +7,32 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.home.HomeFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.ducailatrieuphu.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.chondoithu.GalleryFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.ducailatrieuphu.ui.chondoithu.GalleryFragment"
         android:label="@string/menu_chondoithu"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.slideshow.SlideshowFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.ducailatrieuphu.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_tinthachdau"
         tools:layout="@layout/fragment_slideshow" />
 
 
     <fragment
         android:id="@+id/nav_tools"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.tools.ToolsFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.ducailatrieuphu.ui.tools.ToolsFragment"
         android:label="@string/menu_bangxephang"
         tools:layout="@layout/fragment_tools" />
 
     <fragment
         android:id="@+id/nav_share"
-        android:name="vn.ailatrieuphu.ailatrieuphu.myaap.ui.setting.SettingFragment"
+        android:name="vn.ailatrieuphu.ailatrieuphu.ducailatrieuphu.ui.setting.SettingFragment"
         android:label="@string/menu_tuychinh"
         tools:layout="@layout/fragment_share" />
 
