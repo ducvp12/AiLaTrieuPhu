@@ -5,21 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity">
+
     <ImageView
+        android:id="@+id/bg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/bg"
         android:scaleType="fitXY"
-        android:src="@drawable/home"/>
+        android:src="@drawable/home"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="0dp" />
+
     <ImageView
-        android:id="@+id/btn_dangnhap"
+        android:id="@+id/btn_choingay"
+        android:layout_width="275dp"
+
+        android:layout_height="97dp"
+        android:src="@drawable/dangnhap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_dangky"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/btn_dangky"
+        android:layout_width="275dp"
+        android:layout_height="97dp"
+
+        android:src="@drawable/choithu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dangnhap"/>
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/choithu"
-        android:onClick="Dangnhap"
-        android:id="@+id/btn_dangky"/>
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
